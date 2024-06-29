@@ -1,53 +1,89 @@
 import Image from "next/image";
 import bannerImg from "@/assets/img/thom-holmes-2D9rPQClqKo-unsplash.jpg";
 import signature from "@/assets/img/signature ss.png";
+import signature2 from "@/assets/img/signature bold.png";
 import "./Banner.css";
 import { Button } from "../ui/button";
 
 const Banner = () => {
   return (
-    <div className=" banner-div min-h-screen flex justify-between items-center">
-      <div className="banner-left flex-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facere
-          tenetur reprehenderit repellat, non architecto nostrum odio maxime ea
-          perspiciatis eveniet excepturi exercitationem expedita iure, obcaecati
-          consectetur blanditiis est, nesciunt aspernatur ex quas aliquid ab
-          voluptatibus. Labore nostrum in iure quasi, esse magnam dolores
-          voluptatem, sequi, fuga cum consequatur quas!{" "}
-        </p>
+    <div className=" banner-div relative flex-col justify-center items-center">
+      <div className=" text-center uppercase mt-20 border-b-4 border-t-4">
+        <h2 className="text-8xl font-extrabold">
+          Photo<span className="text-[#F67055]">graphy</span>{" "}
+        </h2>
       </div>
-      <div className="banner-mid relative ">
-        <div className="bg-green-400 relative  ">
-          <Image
-            src={"https://photographer-portfolio-website-advance.vercel.app/static/media/banner-bg.bd7782d8b5405a4d62c3.png"}
-            alt="banner image"
-            // fill
-            className="relative max-w-auto z-50"
-            width={800}
-            height={500}
-            style={{maxWidth : '600px'}}
-          />
-        </div>
-      </div>
-      <div className="banner-right flex-1 ">
-        <div className=" flex-col justify-center items-center text-center ">
-          <Image
-            src={signature}
-            alt="signature"
-            width={500}
-            height={300}
-            className="mx-auto"
-          />
-          <h3 className="text-4xl font-semibold mb-5">
-            Book Your <br /> Schedule
-          </h3>
-          <Button
-            variant="outline"
-            className="h-12 rounded-full border-black border-2"
+      <div className="flex justify-between items-center relative   ">
+        
+        {/* ----------------- Banner Left Section --------------------- */}
+
+        <div className="banner-left flex-1 relative  min-h-[370px] flex  flex-col justify-center items-center">
+          <div
+            className=" absolute top-0"
+            style={{ left: "50%", transform: "translateX(-50%)" }}
           >
-            Book Now
-          </Button>
+            <div className="-rotate-[30deg] ">
+              <h2 className="text-6xl font-bold text-[#F67055]">20K+</h2>
+              <p className="font-bold text-gray-400 ">
+                Customers all over <br />
+                the world
+              </p>
+            </div>
+          </div>
+
+          <div className=" ">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ad
+              suscipit sint aspernatur maxime eaque totam veniam modi facere
+              eius.
+            </p>
+          </div>
+        </div>
+
+        {/* ----------------- Banner Mid Section --------------------- */}
+
+        <div className="banner-mid  ">
+          <div className=" relative  w-20 h-[570px] ">
+            <Image
+              src={
+                "https://photographer-portfolio-website-advance.vercel.app/static/media/banner-bg.bd7782d8b5405a4d62c3.png"
+              }
+              alt="banner image"
+              // fill
+              className=" z-50 bottom-0 absolute"
+              quality={100}
+              width={800}
+              height={500}
+              style={{
+                maxWidth: "550px",
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            />
+          </div>
+        </div>
+
+        {/* ----------------- Banner Right Section --------------------- */}
+
+        <div className="banner-right flex-1 ">
+          <div className=" flex-col justify-center items-center text-center ">
+            <Image
+              src={signature2}
+              alt="signature"
+              width={500}
+              height={300}
+              className="mx-auto "
+            />
+            <h3 className="text-4xl font-semibold mb-5 -mt-10">
+              Book Your <br /> Schedule
+            </h3>
+            <Button
+              variant="outline"
+              className="h-12 rounded-full border-black border-2 px-9"
+            >
+              Lets Talk
+            </Button>
+          </div>
         </div>
       </div>
     </div>
