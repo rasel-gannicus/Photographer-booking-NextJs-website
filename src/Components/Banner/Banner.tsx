@@ -13,10 +13,11 @@ const Banner = () => {
           Photo<span className="text-[#F67055]">graphy</span>{" "}
         </h2>
       </div>
-      <div className="flex justify-between items-center relative   ">
+      <div className="flex justify-between items-center relative ">
+
         {/* ----------------- Banner Left Section --------------------- */}
 
-        <div className="banner-left = flex-1 relative  min-h-[370px] flex  flex-col justify-center items-center">
+        <div className="banner-left flex-1 relative  min-h-[370px] flex  flex-col justify-center items-center  ">
           <div
             className=" absolute top-0"
             style={{ left: "50%", transform: "translateX(-50%)" }}
@@ -31,13 +32,13 @@ const Banner = () => {
           </div>
 
           <div
-            className=" absolute bottom-0"
-            style={{ left: "50%", transform: "translateX(-50%)" }}
+            className=" absolute -bottom-5"
+            style={{ left: "20%", transform: "translateX(-20%)" }}
           >
-            <div className="border-4 p-3 w-40 rounded-md shadow-lg -rotate-[30deg]  ">
+            <div className="border-4 p-3 w-40 rounded-md shadow-lg bg-white -rotate-[30deg]  ">
               <Image
                 src={
-                  "https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg"
+                  "https://i.ibb.co/QC9v3FN/wild-6.jpg"
                 }
                 alt="banner left"
                 width={200}
@@ -45,11 +46,28 @@ const Banner = () => {
               />
             </div>
           </div>
+
           <div
-            className=" absolute bottom-0"
-            style={{ left: "20%", transform: "translateX(-20%)" }}
+            className=" absolute -bottom-0"
+            style={{ right: "30%", transform: "translateX(-30%)" }}
           >
-            <div className="border-4 p-3 w-40 rounded-md shadow-lg -rotate-[30deg]  ">
+            <div className="border-4 p-3 w-40 rounded-md shadow-lg bg-white -rotate-[30deg]   ">
+              <Image
+                src={
+                  "https://i.ibb.co/C9cJTwg/mark-pan4ratte-2x5-Eq-Shzu-E8-unsplash-1.jpg"
+                }
+                alt="banner left"
+                width={200}
+                height={200}
+              />
+            </div>
+          </div>
+
+          <div
+            className=" absolute -bottom-20"
+            style={{ left: "50%", transform: "translateX(-50%)" }}
+          >
+            <div className="border-4 p-3 w-36 rounded-md shadow-lg bg-white -rotate-[30deg]   ">
               <Image
                 src={
                   "https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg"
@@ -61,6 +79,7 @@ const Banner = () => {
             </div>
           </div>
 
+          
 
         </div>
 
