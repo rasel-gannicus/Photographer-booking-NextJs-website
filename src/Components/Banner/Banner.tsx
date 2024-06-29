@@ -1,6 +1,6 @@
 import Image from "next/image";
 import bannerImg from "@/assets/img/thom-holmes-2D9rPQClqKo-unsplash.jpg";
-import signature from "@/assets/img/White Modern Minimalist Signature Brand Logo(1).png";
+import signature from "@/assets/img/signature ss.png";
 import "./Banner.css";
 import { Button } from "../ui/button";
 
@@ -17,9 +17,28 @@ const Banner = () => {
           voluptatem, sequi, fuga cum consequatur quas!{" "}
         </p>
       </div>
+      <div className="banner-mid relative ">
+        <div className="bg-green-400 relative  ">
+          <Image
+            src={"https://photographer-portfolio-website-advance.vercel.app/static/media/banner-bg.bd7782d8b5405a4d62c3.png"}
+            alt="banner image"
+            // fill
+            className="relative max-w-auto z-50"
+            width={800}
+            height={500}
+            style={{maxWidth : '600px'}}
+          />
+        </div>
+      </div>
       <div className="banner-right flex-1 ">
-        <div className=" flex-col justify-center items-center text-center">
-          <Image src={signature} alt="signature" width={300} height={300} className="mx-auto" />
+        <div className=" flex-col justify-center items-center text-center ">
+          <Image
+            src={signature}
+            alt="signature"
+            width={500}
+            height={300}
+            className="mx-auto"
+          />
           <h3 className="text-4xl font-semibold mb-5">
             Book Your <br /> Schedule
           </h3>
