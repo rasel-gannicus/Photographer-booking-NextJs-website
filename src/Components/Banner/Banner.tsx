@@ -8,16 +8,18 @@ import { Button } from "../ui/button";
 const Banner = () => {
   return (
     <div className=" banner-div relative flex-col justify-center items-center">
+
+      {/* ----------------- Banner Header  --------------------- */}
       <div className=" text-center uppercase mt-20 border-b-4 border-t-4">
-        <h2 className="text-8xl font-extrabold">
+        <h2 className="  text-4xl md:text-8xl font-extrabold">
           Photo<span className="text-[#F67055]">graphy</span>{" "}
         </h2>
       </div>
-      <div className="flex justify-between items-center relative ">
 
+      <div className="flex flex-col md:flex md:flex-row justify-between items-center relative ">
         {/* ----------------- Banner Left Section --------------------- */}
 
-        <div className="banner-left flex-1 relative  min-h-[370px] flex  flex-col justify-center items-center  ">
+        <div className=" hidden  md:flex  banner-left flex-1 relative  min-h-[370px] flex-col justify-center items-center  ">
           <div
             className=" absolute top-0"
             style={{ left: "50%", transform: "translateX(-50%)" }}
@@ -37,9 +39,7 @@ const Banner = () => {
           >
             <div className="border-4 p-3 w-40 rounded-md shadow-lg bg-white -rotate-[30deg]  ">
               <Image
-                src={
-                  "https://i.ibb.co/QC9v3FN/wild-6.jpg"
-                }
+                src={"https://i.ibb.co/QC9v3FN/wild-6.jpg"}
                 alt="banner left"
                 width={200}
                 height={200}
@@ -78,22 +78,22 @@ const Banner = () => {
               />
             </div>
           </div>
-
-          
-
         </div>
 
         {/* ----------------- Banner Mid Section --------------------- */}
 
         <div className="banner-mid  ">
-          <div className=" relative  w-20 h-[570px] ">
+          <div className=" relative  w-full md:w-20 md:h-[570px]">
+
+            {/* --- banner image for large screen --- */}
+
             <Image
               src={
                 "https://photographer-portfolio-website-advance.vercel.app/static/media/banner-bg.bd7782d8b5405a4d62c3.png"
               }
               alt="banner image"
               // fill
-              className=" z-50 bottom-0 absolute"
+              className=" z-50 bottom-0 absolute hidden md:block"
               quality={100}
               width={800}
               height={500}
@@ -103,6 +103,23 @@ const Banner = () => {
                 transform: "translateX(-50%)",
               }}
             />
+
+            {/* --- banner image for mobile screen --- */}
+            <Image
+              src={
+                "https://photographer-portfolio-website-advance.vercel.app/static/media/banner-bg.bd7782d8b5405a4d62c3.png"
+              }
+              alt="banner image"
+              // fill
+              className=" z-50 md:hidden"
+              quality={100}
+              width={600}
+              height={500}
+              // style={{
+              //   maxWidth: "550px",
+              // }}
+            />
+
           </div>
         </div>
 
@@ -115,9 +132,9 @@ const Banner = () => {
               alt="signature"
               width={500}
               height={300}
-              className="mx-auto "
+              className="mx-auto hidden md:block"
             />
-            <h3 className="text-4xl font-semibold mb-5 -mt-10">
+            <h3 className=" text-gray-500 text-4xl font-semibold mb-5 md:-mt-10">
               Book Your <br /> Schedule
             </h3>
             <Button
