@@ -14,10 +14,9 @@ const Banner = () => {
         </h2>
       </div>
       <div className="flex justify-between items-center relative   ">
-        
         {/* ----------------- Banner Left Section --------------------- */}
 
-        <div className="banner-left flex-1 relative  min-h-[370px] flex  flex-col justify-center items-center">
+        <div className="banner-left = flex-1 relative  min-h-[370px] flex  flex-col justify-center items-center">
           <div
             className=" absolute top-0"
             style={{ left: "50%", transform: "translateX(-50%)" }}
@@ -31,13 +30,38 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className=" ">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ad
-              suscipit sint aspernatur maxime eaque totam veniam modi facere
-              eius.
-            </p>
+          <div
+            className=" absolute bottom-0"
+            style={{ left: "50%", transform: "translateX(-50%)" }}
+          >
+            <div className="border-4 p-3 w-40 rounded-md shadow-lg -rotate-[30deg]  ">
+              <Image
+                src={
+                  "https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg"
+                }
+                alt="banner left"
+                width={200}
+                height={200}
+              />
+            </div>
           </div>
+          <div
+            className=" absolute bottom-0"
+            style={{ left: "20%", transform: "translateX(-20%)" }}
+          >
+            <div className="border-4 p-3 w-40 rounded-md shadow-lg -rotate-[30deg]  ">
+              <Image
+                src={
+                  "https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg"
+                }
+                alt="banner left"
+                width={200}
+                height={200}
+              />
+            </div>
+          </div>
+
+
         </div>
 
         {/* ----------------- Banner Mid Section --------------------- */}
