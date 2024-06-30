@@ -1,0 +1,11 @@
+
+
+.about-section{
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    /* background-position: top; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://websitedemos.net/photographer-07/wp-content/uploads/sites/1236/2023/04/bg-02-free-img.jpg);
+    /* background-clip: padding-box; */
+}
