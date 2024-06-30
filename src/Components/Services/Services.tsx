@@ -30,7 +30,7 @@ const Services = async () => {
           data.map(
             (index: TService) =>
               index.mainCatagory == "wedding" && (
-                <ServiceCard data={index}></ServiceCard>
+                <ServiceCard data={index} key={index.id}></ServiceCard>
               )
           )}
       </div>
@@ -40,7 +40,7 @@ const Services = async () => {
           data.map(
             (index: TService) =>
               index.mainCatagory == "portrait" && (
-                <ServiceCard data={index}></ServiceCard>
+                <ServiceCard data={index}  key={index.id}></ServiceCard>
               )
           )}
       </div>
