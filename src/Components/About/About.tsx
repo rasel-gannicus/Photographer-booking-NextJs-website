@@ -20,8 +20,8 @@ const About = () => {
       </div>
 
       {/* --- 'About me' section right --- */}
-      <div className="about-right bg-white   md:flex md:flex-col justify-center  md:p-10">
-        <h2 className="font-bold  text-4xl md:text-7xl text-center md:text-left mb-5 pt-10">About Me</h2>
+      <div className="about-right bg-[#4A4B7C]  md:flex md:flex-col justify-center  md:p-10 p-5">
+        <h2 className="font-bold  text-4xl md:text-7xl text-center md:text-left mb-5 pt-10  text-white">About Me</h2>
         <p className="text-gray-400 text-lg text-justify">
           A Professional Photographer from a Small City in Bangladesh. I am a
           self taught Nerd. I have been doing Photography for more than a

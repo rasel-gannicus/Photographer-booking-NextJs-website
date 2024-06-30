@@ -8,7 +8,7 @@ const Banner = () => {
     <div className=" banner-div relative flex-col justify-center items-center">
       {/* ----------------- Banner Header  --------------------- */}
       <div className=" text-center uppercase mt-20 border-b-4 border-t-4">
-        <h2 className="  text-4xl md:text-8xl font-extrabold">
+        <h2 className="  text-3xl lg:text-8xl font-extrabold">
           Photo<span className="text-[#F67055]">graphy</span>{" "}
         </h2>
       </div>

@@ -13,7 +13,7 @@ const Services = async () => {
   const data = await res.json();
   //   console.log(data);
   return (
-    <div className="my-40 md:grid grid-cols-3">
+    <div className="my-28 md:grid grid-cols-3">
 
       <div className="service-div  relative order-1 min-h-[757px]">
         <h2 className=" text-6xl md:text-7xl font-bold text-[#4A4B7C]">Services</h2>

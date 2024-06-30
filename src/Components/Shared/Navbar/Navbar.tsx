@@ -19,7 +19,7 @@ import Image from "next/image";
 export function Navbar() {
   return (
     <div className="flex w-full flex-col">
-      <header className="absolute z-50 top-0 left-0 right-0 w-full flex h-16 items-center gap-4  bg-transparent px-4 md:px-6  lg:container mx-auto text-gray-500">
+      <header className="absolute z-50 top-0 left-0 right-0 w-full flex h-16 items-center gap-4  bg-transparent px-4 md:px-6  md:container mx-auto text-gray-500">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <Image src={logo} alt="Navbar Logo" width={150} height={150} />
           <Link
