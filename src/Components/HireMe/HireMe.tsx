@@ -3,7 +3,7 @@ import './HireMe.css';
 
 const HireMe = () => {
   return (
-    <div className="my-20 md:my-0 hire-me-div py-[500px] md:bg-right ">
+    <div className="my-20 md:my-0 hire-me-div py-[400px] md:bg-right ">
       <h2 className=" text-4xl md:text-8xl text-[#4A4B7C] font-bold">
         Hire Me for Your <br />
         Next Project

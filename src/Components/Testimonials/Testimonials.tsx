@@ -1,8 +1,9 @@
+import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
     return (
-        <div>
-            <h2>Testimonials here</h2>
+        <div className="flex justify-start items-center ">
+            <TestimonialCard />
         </div>
     );
 };
