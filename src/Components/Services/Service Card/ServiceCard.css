@@ -1,0 +1,137 @@
+
+.wedding-card{
+    background: white;
+    width: 250px;
+    /* height: 400px; */
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+    /* border: 1px solid #EA2DE1; */
+    /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); */
+}
+.wedding-card-upper{
+    height: 150px;
+    overflow: hidden;
+}
+.wedding-card-upper img{
+    width: 100%;
+}
+.wedding-card-lower{
+    height: 130px;
+}
+.wedding-card-desc{
+    margin-top: 55px;
+}
+
+.wedding-card-icon{
+    width: 110px;
+    height: 110px;
+    background: white;
+    position: absolute;
+    top: 29%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 0 0px 7px rgba(0,0,0,0.7); */
+}
+.wedding-card-icon-inner{
+    width: 90%;
+    /* border: 5px solid #253745 ; */
+    border: 5px solid #4A4B7C ;
+    height: 90%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .wedding-card-desc h4{
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.3em;
+} */
+/* .package-main-feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    column-gap: 25px;
+}
+.package-main-feature p:first-child{
+    color: #369EE5;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+.package-main-feature p:last-child{
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+} */
+
+
+/* Book now button */
+.book-button{
+    /* width: 70%; */
+    margin: 10px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* background: #F67055; */
+    background: #4A4B7C;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.book-button2{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.389);
+    cursor: pointer;
+    margin: 0;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    color: #253745;
+    margin-top: 25px;
+    cursor: not-allowed;
+}
+
+.book-button:hover{
+    color: black;
+}
+
+.wedding-card-icon-inner p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    /* color: #CB002B; */
+}
+.package-feature{
+    padding: 10px 2px;
+}
+.package-features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.package-features ul{
+    text-align: left;
+}
+.package-features ul li{
+    margin: 5px 0;
+}
