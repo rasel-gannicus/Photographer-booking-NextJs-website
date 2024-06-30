@@ -8,7 +8,6 @@ import { Button } from "../ui/button";
 const Banner = () => {
   return (
     <div className=" banner-div relative flex-col justify-center items-center">
-
       {/* ----------------- Banner Header  --------------------- */}
       <div className=" text-center uppercase mt-20 border-b-4 border-t-4">
         <h2 className="  text-4xl md:text-8xl font-extrabold">
@@ -21,7 +20,7 @@ const Banner = () => {
 
         <div className=" hidden  md:flex  banner-left flex-1 relative  min-h-[370px] flex-col justify-center items-center  ">
           <div
-            className=" absolute top-0"
+            className=" absolute -top-5"
             style={{ left: "50%", transform: "translateX(-50%)" }}
           >
             <div className="-rotate-[30deg] ">
@@ -35,9 +34,9 @@ const Banner = () => {
 
           <div
             className=" absolute -bottom-5"
-            style={{ left: "20%", transform: "translateX(-20%)" }}
+            style={{ left: "30%", transform: "translateX(-30%)" }}
           >
-            <div className="border-4 p-3 w-40 rounded-md shadow-lg bg-white -rotate-[30deg]  ">
+            <div className="border-4 p-2 w-32 rounded-md shadow-lg bg-white -rotate-[30deg]  ">
               <Image
                 src={"https://i.ibb.co/QC9v3FN/wild-6.jpg"}
                 alt="banner left"
@@ -48,10 +47,10 @@ const Banner = () => {
           </div>
 
           <div
-            className=" absolute -bottom-0"
-            style={{ right: "30%", transform: "translateX(-30%)" }}
+            className=" absolute -bottom-5"
+            style={{ left: "60%", transform: "translateX(-60%)" }}
           >
-            <div className="border-4 p-3 w-40 rounded-md shadow-lg bg-white -rotate-[30deg]   ">
+            <div className="border-4 p-2 w-28 rounded-md shadow-lg bg-white -rotate-[30deg]   ">
               <Image
                 src={
                   "https://i.ibb.co/C9cJTwg/mark-pan4ratte-2x5-Eq-Shzu-E8-unsplash-1.jpg"
@@ -67,7 +66,7 @@ const Banner = () => {
             className=" absolute -bottom-20"
             style={{ left: "50%", transform: "translateX(-50%)" }}
           >
-            <div className="border-4 p-3 w-36 rounded-md shadow-lg bg-white -rotate-[30deg]   ">
+            <div className="border-4 p-2 w-28 rounded-md shadow-lg bg-white -rotate-[30deg]   ">
               <Image
                 src={
                   "https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg"
@@ -84,7 +83,6 @@ const Banner = () => {
 
         <div className="banner-mid  ">
           <div className=" relative  w-full md:w-20 md:h-[570px]">
-
             {/* --- banner image for large screen --- */}
 
             <Image
@@ -119,7 +117,6 @@ const Banner = () => {
               //   maxWidth: "550px",
               // }}
             />
-
           </div>
         </div>
 
