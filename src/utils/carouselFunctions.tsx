@@ -53,7 +53,7 @@ export const getImg = (count: number) => {
           src={clientImg1}
           alt="testimonial pic"
           width={440}
-          className="absolute -top-20 -right-48 shadow-2xl drop-shadow-2xl"
+          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
         />
       );
     case 1:
@@ -62,7 +62,7 @@ export const getImg = (count: number) => {
           src={clientImg2}
           alt="testimonial pic"
           width={440}
-          className="absolute -top-20 -right-48 shadow-2xl drop-shadow-2xl"
+          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
         />
       );
     case 2:
@@ -71,7 +71,7 @@ export const getImg = (count: number) => {
           src={clientImg3}
           alt="testimonial pic"
           width={440}
-          className="absolute -top-20 -right-48 shadow-2xl drop-shadow-2xl"
+          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
         />
       );
     default:
@@ -80,7 +80,7 @@ export const getImg = (count: number) => {
           src={clientImg1}
           alt="testimonial pic"
           width={440}
-          className="absolute -top-20 -right-48 shadow-2xl drop-shadow-2xl"
+          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset]  md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
         />
       );
   }
