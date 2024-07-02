@@ -14,7 +14,7 @@ export default function Home() {
       <MyGear /> 
       <HireMe />
       <Testimonials />
-      <h2 className="my-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem vero beatae deleniti, unde vitae nesciunt. Officiis, ipsa cum! Blanditiis similique debitis eaque pariatur, architecto cupiditate distinctio facere neque autem adipisci illum reiciendis recusandae praesentium? At dicta quos fugiat </h2>
+
     </main>
   );
 }
