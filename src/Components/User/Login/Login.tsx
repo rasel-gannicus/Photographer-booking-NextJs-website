@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import googleLogo from "@/assets/img/Icons/google.svg";
 import facebookLogo from "@/assets/img/Icons/facebook (1).svg";
@@ -13,11 +14,12 @@ import {
   useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
+import "react-toastify/ReactToastify.css";
+import { toast } from "@/components/ui/use-toast";
+import { Toaster } from "@/components/ui/toaster";
 
 const Login = () => {
-  //   const navigate = useNavigate();
-  //   let location = useLocation();
-  //   let from = location.state?.from?.pathname || "/";
+  const navigate = useRouter();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,9 +42,6 @@ const Login = () => {
   // sign up with 'github'
   const [signInWithGithub, user4, loading4, error4] = useSignInWithGithub(auth);
 
-  let errorText = document.querySelector(".error-message p");
-  let spinnerSignup = document.querySelector(".spinner-signup");
-
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
@@ -51,23 +50,19 @@ const Login = () => {
 
     signInWithEmailAndPassword(email, password);
     if (user || user2 || user3 || user4) {
-      //   navigate("/");
-      //   navigate(from, { replace: true });
-      console.log('got login');
+      navigate.push("/");
+      console.log("got login");
     }
 
     return;
   }
 
   if (user || user2 || user3 || user4) {
-    // navigate("/");
-    // navigate(from, { replace: true });
-    console.log("Login Success !");
+    toast({ description: "Login Success" });
+    navigate.push("/");
   }
   if (error) {
-    // errorText.innerText = `${error.message}`;
-    // spinnerSignup.style.display = "none";
-    console.log(error);
+    toast({ description: error.code, variant: "destructive" });
   }
 
   return (
@@ -100,7 +95,7 @@ const Login = () => {
                 type="email"
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                 placeholder="Enter email"
-                onBlur={e => handleEmail(e)}
+                onBlur={(e) => handleEmail(e)}
                 required
               />
 
@@ -133,7 +128,7 @@ const Login = () => {
                 type="password"
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                 placeholder="Enter password"
-                onBlur={e => handlePassword(e)}
+                onBlur={(e) => handlePassword(e)}
                 required
               />
 
@@ -211,6 +206,7 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <Toaster />
     </div>
   );
 };
