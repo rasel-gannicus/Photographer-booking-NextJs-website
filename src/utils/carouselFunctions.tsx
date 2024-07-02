@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import './Carousel.css' ;
 import clientImg1 from "../assets/img/street-21.jpg";
 import clientImg2 from "../assets/img/trevor-buntin-m-Qz-ALy-EB-T4-unsplash-1.jpg";
 import clientImg3 from "../assets/img/woman in black white.jpg";
@@ -46,6 +46,7 @@ export const getShortBio = (count: number) => {
 };
 
 export const getImg = (count: number) => {
+    const imgClass = `lg:absolute w-[200px] md:w-[440px]  md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl `
   switch (count) {
     case 0:
       return (
@@ -53,7 +54,7 @@ export const getImg = (count: number) => {
           src={clientImg1}
           alt="testimonial pic"
           width={440}
-          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
+          className={imgClass}
         />
       );
     case 1:
@@ -62,7 +63,7 @@ export const getImg = (count: number) => {
           src={clientImg2}
           alt="testimonial pic"
           width={440}
-          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
+          className={imgClass}
         />
       );
     case 2:
@@ -71,7 +72,7 @@ export const getImg = (count: number) => {
           src={clientImg3}
           alt="testimonial pic"
           width={440}
-          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset] md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
+          className={imgClass}
         />
       );
     default:
@@ -80,7 +81,7 @@ export const getImg = (count: number) => {
           src={clientImg1}
           alt="testimonial pic"
           width={440}
-          className="absolute w-[220px] md:w-[440px] -top-32 right-0 left-[50%] translate-x-[-50%] md:left-[unset] md:translate-x-[unset]  md:-top-20 md:-right-48 shadow-2xl drop-shadow-2xl"
+          className={imgClass}
         />
       );
   }
