@@ -1,4 +1,3 @@
-import Image from "next/image";
 import BannerLeft from "./Banner-Left/BannerLeft";
 import BannerRight from "./Banner-Right/BannerRight";
 import BannerMid from "./Banner-Mid/BannerMid";
